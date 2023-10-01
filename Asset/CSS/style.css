@@ -1,0 +1,178 @@
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-head{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color:#001524;
+    padding:0px 5%;
+}
+.navbar-head a{
+    color: white;
+    text-decoration: none;
+}
+.navbar-nav li{
+    display: inline-block;
+    font-size: large;
+    margin: 30px;
+}
+
+.navbar-nav li a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+
+/*Main body part*/
+body{
+    background-color: #001524;
+}
+
+/*All about home section*/
+#home{
+    background-color: #001524;
+    padding: 16%;
+    background-image: url('../img/back.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#home h1{
+    color: white;
+    font-size: 500%;
+}
+
+/*All about the about section*/
+#about{
+    background-color: #053B50;
+    margin-top: 5%;
+    padding: 2%;
+    text-align: center;
+}
+#about h2{
+    color: white;
+}
+#about article{
+    color: white;
+}
+#content_about{
+    margin: 35px;
+    display: flex;
+}
+#muka{
+    margin-left: 10%;
+    width: 200px;
+    height: 200px;
+    border: 3px solid #64CCC5;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    display: inline-block;
+}
+#content_about article{
+    text-align: justify;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/*All about experiences section*/
+#experiences{
+    background-color: #053B50;
+    padding: 2%;
+    text-align: center;
+    margin-top: 5%;
+}
+#experiences h2{
+    color: white;
+}
+#content_experiences{
+    display: flex;
+    justify-content: space-around;
+}
+#ex1{
+    background-color: #64CCC5;
+    text-align: center;
+    width: 300px;
+    height: 250px;
+    margin-top: 35px;
+    color: black;
+    box-shadow: black 10px 10px 5px;
+}
+#ex2{
+    background-color: #64CCC5;
+    text-align: center;
+    width: 300px;
+    height: 250px;
+    margin-top: 35px;
+    color: black;
+    box-shadow: black 10px 10px 5px;
+}
+#ex3{
+    background-color: #64CCC5;
+    text-align: center;
+    width: 300px;
+    height: 250px;
+    margin-top: 35px;
+    color: black;
+    box-shadow: black 10px 10px 5px;
+}
+
+#content_bawah{
+    display: flex;
+    justify-content: space-around;
+}
+#ex4{
+    background-color: #64CCC5;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    color: black;
+    box-shadow: black 10px 10px 5px;
+}
+#ex5{
+    background-color: #64CCC5;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    color: black;
+    box-shadow: black 10px 10px 5px;
+}
+
+/*All about the footer section*/
+footer {
+    bottom: 0;
+    background: #040D12;
+    color: white;
+    padding: 1%;
+    text-align: center;
+ }
+
+ @media screen and (max-width: 960px) {
+    #content_experiences{
+        flex-direction: column;
+        align-items: center;
+    }
+    #content_projects{
+        flex-direction: column;
+        align-items: center;
+    }
+ }
+ @media screen and (max-width: 738px) {
+    #content_about{
+        flex-direction: column;
+        align-items: center;
+    }
+    #muka{
+        margin-left: 0;
+    }
+ }
+ @media screen and (max-width: 594px) {
+    #home h1{
+        font-size: 400%;
+    }
+ }
